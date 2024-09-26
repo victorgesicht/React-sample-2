@@ -1,23 +1,24 @@
-import logo from './logo.svg';
+
 import './App.css';
+import BooksList from './components/booksList';
+import {NavBar} from './components/navbar'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+    <NavBar/>
+    <p> 90% through with my Django Full Stack</p>
+    <p>I'm currently working on my CSS:</p> 
+    <p>90 % through with my JS</p>
+
+
+<strong> What I'm reading?</strong>
+<br></br>
+    <BooksList/>
+<br></br>
+
+
     </div>
   );
 }
